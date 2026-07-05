@@ -4,37 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Flow - Login</title>
-  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <main class="auth-page">
-    <section class="auth-card">
-      <h1>Task Flow</h1>
-      <p>Login or create a new account.</p>
+<div class="auth-page">
+<section class="auth-card">
+  <h1>Task Flow</h1>
+  <p class="auth-subtitle">Manage your personal tasks securely.</p>
 
-      <form id="loginForm" class="auth-form">
-        <label for="loginUsername">Username</label>
-        <input id="loginUsername" name="username" type="text" required>
+  <div class="auth-sections">
 
-        <label for="loginPassword">Password</label>
-        <input id="loginPassword" name="password" type="password" required>
+    <form id="loginForm" class="auth-form auth-box">
+      <h2>Login</h2>
 
-        <button type="submit">Login</button>
-      </form>
+      <label for="loginUsername">Username</label>
+      <input id="loginUsername" name="username" type="text" required>
 
-      <form id="registerForm" class="auth-form">
-        <label for="registerUsername">New username</label>
-        <input id="registerUsername" name="username" type="text" required>
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" name="password" type="password" required>
 
-        <label for="registerPassword">New password</label>
-        <input id="registerPassword" name="password" type="password" required>
+      <button type="submit">Login</button>
+    </form>
 
-        <button type="submit">Register</button>
-      </form>
+    <form id="registerForm" class="auth-form auth-box register-box">
+      <h2>Create Account</h2>
 
-      <p id="messageBox"></p>
-    </section>
-  </main>
-  <script src="./js/auth.js"></script>
-</body>
+      <label for="registerUsername">New username</label>
+      <input id="registerUsername" name="username" type="text" required>
+
+      <label for="registerPassword">New password</label>
+      <input id="registerPassword" name="password" type="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+  </div>
+
+  <p id="messageBox"></p>
+</section>
+</div>
+
+
+<script src="js/auth.js"></script></body>
 </html>

@@ -7,6 +7,7 @@ Imported resources: none
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background: #f4f6fb;
   color: #1f2937;
@@ -84,4 +85,43 @@ button {
 .task-actions {
   display: flex;
   gap: 8px;
+}
+
+.auth-subtitle {
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.auth-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.auth-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.register-box {
+  background: #f8fafc;
+}
+
+.auth-box h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+#messageBox {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .auth-sections {
+    grid-template-columns: 1fr;
+  }
 }
