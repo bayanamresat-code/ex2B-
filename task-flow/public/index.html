@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Flow - Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card">
+      <h1>Task Flow</h1>
+      <p>Login or create a new account.</p>
+
+      <form id="loginForm" class="auth-form">
+        <label for="loginUsername">Username</label>
+        <input id="loginUsername" name="username" type="text" required>
+
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="registerForm" class="auth-form">
+        <label for="registerUsername">New username</label>
+        <input id="registerUsername" name="username" type="text" required>
+
+        <label for="registerPassword">New password</label>
+        <input id="registerPassword" name="password" type="password" required>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="messageBox"></p>
+    </section>
+  </main>
+  <script src="./js/auth.js"></script>
+</body>
+</html>

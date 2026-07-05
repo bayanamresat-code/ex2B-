@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Flow - Tasks</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="tasks-page">
+    <section class="tasks-card">
+      <div class="tasks-header">
+        <h1>My Tasks</h1>
+        <button id="logoutButton" type="button">Logout</button>
+      </div>
+
+      <form id="taskForm" class="task-form">
+        <input id="taskTitle" name="title" type="text" placeholder="Task title" required>
+        <input id="taskDescription" name="description" type="text" placeholder="Task description">
+        <button type="submit">Add Task</button>
+      </form>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+  <script src="./js/tasks.js"></script>
+</body>
+</html>

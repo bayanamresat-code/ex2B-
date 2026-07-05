@@ -1,0 +1,4 @@
+node_modules/
+client/node_modules/
+private/taskflow.db
+.DS_Store
